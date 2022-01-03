@@ -142,7 +142,7 @@ FROM
 
 image::https://user-images.githubusercontent.com/63274055/147939794-9b75ea6d-6a4b-4694-b02f-b4ec296d0049.png[width=600]
 
-** A10: the ratio of urban inhabitants
+** A10: the ratio of urban inhabitantsfootnote:[{fn-rank}]
 
 ```sql
 SELECT
