@@ -125,7 +125,7 @@ silver medalist.footnote:[{fn-rank}]
 If I didn't want the "skipping" of levels, then I should use the Dense_rank() 
 function,  so no olympic medalling style of ranking with Dense_rank().
 ====
-footnote:[{fn-rank}]
+
 
 
 ```sql
