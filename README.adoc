@@ -1,4 +1,4 @@
-= XXX Activity 99 to 99 | 9.99
+= SQL Activity 2.08
 :stylesheet: boot-darkly.css
 :linkcss: boot-darkly.css
 :image-url-ironhack: https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png
@@ -104,7 +104,7 @@ image::[width=600]
 
 bla bla blafootnote:[{fn-xxx}]
 
-xref:XXX-Activity-99-to-99-|-9.99[Top Section]
+xref:SQL-Activity-2--08[Top Section]
 
 xref:Last-section[Bottom section]
 
