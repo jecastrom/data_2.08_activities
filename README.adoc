@@ -12,6 +12,8 @@
 :fn-rank: {rank-wiki}
 :rank-wiki: https://en.wikipedia.org/wiki/Ranking#Standard_competition_ranking_("1224"_ranking)
 ifdef::env-github[]
+:fn-rank: {rank-wiki}
+:rank-wiki: https://en.wikipedia.org/wiki/Ranking#Standard_competition_ranking_("1224"_ranking)
 :sectnums:
 :tip-caption: :bulb:
 :note-caption: :information_source:
