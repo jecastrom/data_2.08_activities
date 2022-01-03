@@ -120,7 +120,7 @@ Notice that the number of cities can repeat or tie. When this occurs
 the two values receive the same ranking number, and then a gap is left 
 in the ranking numbers. 
 
-The Rank() functions uses a link:{rank-wiki}[Standard competition ranking strategy] ('1224' ranking). for example 
+The Rank() functions uses a link:{rank-wiki}[Standard competition ranking strategy] (`1224` ranking). for example 
 ranks in a "Olympic medalling style", if two people  share the gold, there is no 
 silver medalist.footnote:[{fn-rank}]
  
