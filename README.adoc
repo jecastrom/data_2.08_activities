@@ -6,10 +6,10 @@
 :description: SQL queries Activities
 //:script-url: ADD SCRIPT URL HERE 
 :toc:
-:toc-title: Activities | Description:
+:toc-title: Activities | 
 :toc-placement!:
 :toclevels: 5
-:fn-xxx: Add the explanation foot note here bla bla
+//:fn-xxx: Add the explanation foot note here bla bla
 ifdef::env-github[]
 :sectnums:
 :tip-caption: :bulb:
@@ -63,13 +63,18 @@ toc::[]
 
 
 
-== xxxxxxxx:
+= Activity 1
 
-== xxxx
+* In this activity, we will be using the table `district` from the `bank` database and according to the description for the different columns:
 
-=== hjfkdshf
+** A4: no. of inhabitants
+** A9: no. of cities
+** A10: the ratio of urban inhabitants
+** A11: average salary
+** A12: the unemployment rate
 
-
+== Rank districts by different variables.
+== Do the same but group by region.
 
 `*_Answer:_*`
 
