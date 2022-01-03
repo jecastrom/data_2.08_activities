@@ -120,7 +120,7 @@ image::https://user-images.githubusercontent.com/63274055/147939661-88d36340-bd7
 
  The Rank() functions uses a Standard competition ranking strategy. for example 
  ranks in a "Olympic medalling style", if two people  share the gold, there is no 
- silver medalist.footnote:[{fn-rank}]
+ silver medalistfootnote:[{fn-rank}]
  
  If I didn't want the "skipping" of levels, then I should use the Dense_rank() 
  function,  so no olympic medalling style of ranking with Dense_rank().
@@ -142,7 +142,7 @@ FROM
 
 image::https://user-images.githubusercontent.com/63274055/147939794-9b75ea6d-6a4b-4694-b02f-b4ec296d0049.png[width=600]
 
-** A10: the ratio of urban inhabitantsfootnote:[{fn-rank}]
+** A10: the ratio of urban inhabitants
 
 ```sql
 SELECT
