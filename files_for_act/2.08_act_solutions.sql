@@ -58,4 +58,79 @@ SELECT
     ) AS ranking
 FROM
     district;
+-- A12: the unemployment rate
+SELECT
+    a2 AS district_name,
+    a12 AS unemployment_rate,
+    rank() over(
+        ORDER BY
+            a12 DESC
+    ) AS ranking
+FROM
+    district;
+-- Overview by unemployment rate:
+SELECT
+    a2 AS district_name,
+    a12 AS unemployment_rate,
+    rank() over(
+        ORDER BY
+            a12 DESC
+    ) AS ranking,
+    a4 AS no_of_inhabitants,
+    rank() over(
+        ORDER BY
+            a4 DESC
+    ) AS ranking,
+    a9 AS no_of_cities,
+    rank() over(
+        ORDER BY
+            a9 DESC
+    ) AS ranking,
+    a10 AS ratio_of_urban_inhabitants,
+    rank() over(
+        ORDER BY
+            a10 DESC
+    ) AS ranking,
+    a11 AS average_salary,
+    rank() over(
+        ORDER BY
+            a11 DESC
+    ) AS ranking
+FROM
+    district
+ORDER BY
+    unemployment_rate DESC;
 -- 2) Do the same but group by region.
+SELECT
+    a3 AS region,
+    sum(a4) AS no_of_inhabitants,
+    rank() over(
+        ORDER BY
+            sum(a4) DESC
+    ) AS ranking,
+    sum(a9) AS no_of_cities,
+    rank() over(
+        ORDER BY
+            sum(a9) DESC
+    ) AS ranking,
+    avg(a10) AS ratio_of_urban_inhabitants,
+    rank() over(
+        ORDER BY
+            avg(a10) DESC
+    ) AS ranking,
+    avg(a11) AS average_salary,
+    rank() over(
+        ORDER BY
+            avg(a11) DESC
+    ) AS ranking,
+    avg(a12) AS unemployment_rate,
+    rank() over(
+        ORDER BY
+            avg(a12) DESC
+    ) AS ranking
+FROM
+    district
+GROUP BY
+    1
+ORDER BY
+    no_of_inhabitants DESC;

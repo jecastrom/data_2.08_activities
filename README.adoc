@@ -171,38 +171,95 @@ image::https://user-images.githubusercontent.com/63274055/147943578-3f9799d0-5f0
 ** A12: the unemployment rate
 
 ```sql
-
+SELECT
+    a2 AS district_name,
+    a12 AS unemployment_rate,
+    rank() over(
+        ORDER BY
+            a12 DESC
+    ) AS ranking
+FROM
+    district;
 ```
-image::[width=600]
+image::https://user-images.githubusercontent.com/63274055/147962196-64c43272-ae8c-428d-bfe8-31f143930c9c.png[width=600]
 
-** An overview
+** An overview ranked by unemployment rate
 
 ```sql
-
+SELECT
+    a2 AS district_name,
+    a12 AS unemployment_rate,
+    rank() over(
+        ORDER BY
+            a12 DESC
+    ) AS ranking,
+    a4 AS no_of_inhabitants,
+    rank() over(
+        ORDER BY
+            a4 DESC
+    ) AS ranking,
+    a9 AS no_of_cities,
+    rank() over(
+        ORDER BY
+            a9 DESC
+    ) AS ranking,
+    a10 AS ratio_of_urban_inhabitants,
+    rank() over(
+        ORDER BY
+            a10 DESC
+    ) AS ranking,
+    a11 AS average_salary,
+    rank() over(
+        ORDER BY
+            a11 DESC
+    ) AS ranking
+FROM
+    district
+ORDER BY
+    unemployment_rate DESC;
 ```
-image::[width=600]
+image::https://user-images.githubusercontent.com/63274055/147964235-1d581a9d-5523-45df-b62e-2a08b276c4f4.png[width=600]
 
-== Do the same but group by region.
+== Do the same but group by region
 
 `*_Answer:_*`
 
 ```sql
-
+SELECT
+    a3 AS region,
+    sum(a4) AS no_of_inhabitants,
+    rank() over(
+        ORDER BY
+            sum(a4) DESC
+    ) AS ranking,
+    sum(a9) AS no_of_cities,
+    rank() over(
+        ORDER BY
+            sum(a9) DESC
+    ) AS ranking,
+    avg(a10) AS ratio_of_urban_inhabitants,
+    rank() over(
+        ORDER BY
+            avg(a10) DESC
+    ) AS ranking,
+    avg(a11) AS average_salary,
+    rank() over(
+        ORDER BY
+            avg(a11) DESC
+    ) AS ranking,
+    avg(a12) AS unemployment_rate,
+    rank() over(
+        ORDER BY
+            avg(a12) DESC
+    ) AS ranking
+FROM
+    district
+GROUP BY
+    1
+ORDER BY
+    no_of_inhabitants DESC;
 ```
-image::[width=600]
-
-====
-''''
-====
-
-== Last-section
-
-`*_Answer:_*`
-
-```sql
-
-```
-image::[width=600]
+image::https://user-images.githubusercontent.com/63274055/147972175-2a6f834b-38f0-4da4-9751-c55559675344.png[width=600]
 
 ====
 ''''
@@ -219,7 +276,7 @@ image::[width=600]
 
 xref:SQL-Activity-2-08[Top Section]
 
-xref:Last-section[Bottom section]
+xref:Do-the-same-but-group-by-region[Bottom section]
 
 
 ////
