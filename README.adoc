@@ -141,16 +141,32 @@ image::https://user-images.githubusercontent.com/63274055/147939794-9b75ea6d-6a4
 ** A10: the ratio of urban inhabitants
 
 ```sql
-
+SELECT
+    a2 AS district_name,
+    a10 AS ratio_of_urban_inhabitants,
+    rank() over(
+        ORDER BY
+            a10 DESC
+    ) AS ranking
+FROM
+    district;
 ```
-image::[width=600]
+image::https://user-images.githubusercontent.com/63274055/147943046-3d82e44e-dca7-4acd-90c2-75b1415259a1.png[width=600]
 
 ** A11: average salary
 
 ```sql
-
+SELECT
+    a2 AS district_name,
+    a11 AS average_salary,
+    rank() over(
+        ORDER BY
+            a11 DESC
+    ) AS ranking
+FROM
+    district;
 ```
-image::[width=600]
+image::https://user-images.githubusercontent.com/63274055/147943578-3f9799d0-5f0d-4057-b8d4-9efc6969100d.png[width=600]
 
 ** A12: the unemployment rate
 

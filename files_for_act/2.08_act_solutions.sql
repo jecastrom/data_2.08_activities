@@ -38,4 +38,24 @@ SELECT
     ) AS ranking
 FROM
     district;
+-- A10: the ratio of urban inhabitants
+SELECT
+    a2 AS district_name,
+    a10 AS ratio_of_urban_inhabitants,
+    rank() over(
+        ORDER BY
+            a10 DESC
+    ) AS ranking
+FROM
+    district;
+-- A11: average salary
+SELECT
+    a2 AS district_name,
+    a11 AS average_salary,
+    rank() over(
+        ORDER BY
+            a11 DESC
+    ) AS ranking
+FROM
+    district;
 -- 2) Do the same but group by region.
