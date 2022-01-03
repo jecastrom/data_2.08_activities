@@ -9,7 +9,8 @@
 :toc-title: Content:
 :toc-placement!:
 :toclevels: 5
-:fn-rank: Standard competition ranking Wikipedia
+:fn-rank: Strategies for assigning rankings: Standard competition ranking. Wikipedia
+:fn-dense_rank: Strategies for assigning rankings: Dense ranking. Wikipedia
 :rank-wiki: https://en.wikipedia.org/wiki/Ranking#Standard_competition_ranking_("1224"_ranking)
 ifdef::env-github[]
 :sectnums:
@@ -118,13 +119,14 @@ Notice that the number of cities can repeat or tie. When this occurs
 the two values receive the same ranking number, and then a gap is left 
 in the ranking numbers. 
 
-The Rank() functions uses a Standard competition ranking strategy. for example 
+The Rank() functions uses a Standard competition ranking strategy ('1224' ranking). for example 
 ranks in a "Olympic medalling style", if two people  share the gold, there is no 
 silver medalist.footnote:[{fn-rank}]
  
-If I didn't want the "skipping" of levels, then I should use the Dense_rank() 
-function,  so no olympic medalling style of ranking with Dense_rank().
+If I didn't want a "gap" in the ranking numbers, then I should use the Dense_rank() 
+function which uses a Dense ranking strategy (`1223` ranking)  so no olympic medalling style of ranking with Dense_rank(). In dense ranking, items that compare equally receive the same ranking number, and the next items receive the immediately following ranking number.footnote:[{fn-dense_rank}]
 ====
+
 
 
 
