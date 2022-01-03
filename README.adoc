@@ -120,7 +120,7 @@ in the ranking numbers.
 
 The Rank() functions uses a Standard competition ranking strategy. for example 
 ranks in a "Olympic medalling style", if two people  share the gold, there is no 
-silver medalist.
+silver medalist.footnote:[{fn-rank}]
  
 If I didn't want the "skipping" of levels, then I should use the Dense_rank() 
 function,  so no olympic medalling style of ranking with Dense_rank().
