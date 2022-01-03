@@ -11,7 +11,7 @@
 :toclevels: 5
 :fn-rank: Strategies for assigning rankings: Standard competition ranking. Wikipedia
 :fn-dense_rank: Strategies for assigning rankings: Dense ranking. Wikipedia
-:rank-wiki: https://en.wikipedia.org/wiki/Ranking#Standard_competition_ranking_("1224"_ranking)
+:rank-wiki: https://en.wikipedia.org/wiki/Ranking#:~:text=also%20shown%20below.-,Standard%20competition%20ranking%20(%221224%22%20ranking),of%20items%20that%20compared%20equal.
 :drank-wiki: https://en.wikipedia.org/wiki/Ranking#:~:text=as%20a%20gap.-,Dense%20ranking%20("1223"%20ranking),respect%20to%20the%20ranking%20order.
 ifdef::env-github[]
 :sectnums:
