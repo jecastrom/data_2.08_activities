@@ -9,7 +9,7 @@
 :toc-title: Content:
 :toc-placement!:
 :toclevels: 5
-:fn-rank: {rank-wiki}[Standard competition ranking Wikipedia]
+:fn-rank: Standard competition ranking Wikipedia
 :rank-wiki: https://en.wikipedia.org/wiki/Ranking#Standard_competition_ranking_("1224"_ranking)
 ifdef::env-github[]
 :sectnums:
