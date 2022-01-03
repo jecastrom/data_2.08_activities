@@ -77,6 +77,80 @@ toc::[]
 
 `*_Answer:_*`
 
+
+** A4: no. of inhabitants
+
+```sql
+SELECT
+    a2 AS district_name,
+    a4 AS no_of_inhabitants,
+    rank() over(
+        ORDER BY
+            a4 DESC
+    ) AS ranking
+FROM
+    district;
+```
+image::https://user-images.githubusercontent.com/63274055/147936926-1c13dd31-b52f-4f6d-b31b-f95a07df1afd.png[width=600]
+
+** A9: no. of cities
+
+
+
+```sql
+SELECT
+    a2 AS district_name,
+    a9 AS no_of_cities,
+    rank() over(
+        ORDER BY
+            a9 DESC
+    ) AS ranking
+FROM
+    district;
+```
+image::https://user-images.githubusercontent.com/63274055/147939661-88d36340-bd7c-4e49-b28d-d60875e9f991.png[width=600]
+
+ _Notice that the number of cities can repeat. When this occurs rank gives the same  rank to the repeated values and skips one level. The Rank() functions ranks in a  "Olympic medalling style", if two people share the gold, there is no silver medalist._
+ 
+ _If I didn't want the "skipping" of levels, then I should use the Dense_rank() function,  so no olympic medalling style of ranking with Dense_rank()._
+
+ ```sql
+ SELECT
+    a2 AS district_name,
+    a9 AS no_of_cities,
+    dense_rank() over(
+        ORDER BY
+            a9 DESC
+    ) AS ranking
+FROM
+    district;
+```
+
+image::https://user-images.githubusercontent.com/63274055/147939794-9b75ea6d-6a4b-4694-b02f-b4ec296d0049.png[width=600]
+
+** A10: the ratio of urban inhabitants
+
+```sql
+
+```
+image::[width=600]
+
+** A11: average salary
+
+```sql
+
+```
+image::[width=600]
+
+** A12: the unemployment rate
+
+```sql
+
+```
+image::[width=600]
+
+** An overview
+
 ```sql
 
 ```
