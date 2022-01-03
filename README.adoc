@@ -128,7 +128,7 @@ If I didn't want a "gap" in the ranking numbers, then I should use the Dense_ran
 function which uses a {drank-wiki}[Dense ranking strategy] (`1223` ranking)  so no olympic medalling style of ranking with Dense_rank(). In dense ranking, items that compare equally receive the same ranking number, and the next items receive the immediately following ranking number.footnote:[{fn-dense_rank}]
 ====
 
-
+link:https://en.wikipedia.org/wiki/Ranking#:~:text=as%20a%20gap.-,Dense%20ranking%20("1223"%20ranking),respect%20to%20the%20ranking%20order.[alt]
 
 
 ```sql
