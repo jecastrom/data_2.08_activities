@@ -110,11 +110,11 @@ FROM
 ```
 image::https://user-images.githubusercontent.com/63274055/147939661-88d36340-bd7c-4e49-b28d-d60875e9f991.png[width=600]
 
- _Notice that the number of cities can repeat. When this occurs rank gives the same  rank to the repeated values and skips one level. The Rank() functions ranks in a  "Olympic medalling style", if two people share the gold, there is no silver medalist._
+ _Notice that the number of cities can repeat. When this occurs rank gives the same  rank to the repeated values and skips one level. The Rank() functions ranks in a "Olympic medalling style", if two people share the gold, there is no silver medalist._
  
  _If I didn't want the "skipping" of levels, then I should use the Dense_rank() function,  so no olympic medalling style of ranking with Dense_rank()._
 
- ```sql
+```sql
  SELECT
     a2 AS district_name,
     a9 AS no_of_cities,
