@@ -12,6 +12,7 @@
 :fn-rank: Strategies for assigning rankings: Standard competition ranking. Wikipedia
 :fn-dense_rank: Strategies for assigning rankings: Dense ranking. Wikipedia
 :rank-wiki: https://en.wikipedia.org/wiki/Ranking#Standard_competition_ranking_("1224"_ranking)
+:drank-wiki: https://en.wikipedia.org/wiki/Ranking#:~:text=as%20a%20gap.-,Dense%20ranking%20("1223"%20ranking),respect%20to%20the%20ranking%20order.
 ifdef::env-github[]
 :sectnums:
 :tip-caption: :bulb:
@@ -54,7 +55,7 @@ image::{image-url-ironhack}[width=70]
 
 {my-name}
 
-
+https://en.wikipedia.org/wiki/Ranking#Standard_competition_ranking_(%221224%22_ranking)
                                                      
 ====
 ''''
@@ -124,9 +125,9 @@ ranks in a "Olympic medalling style", if two people  share the gold, there is no
 silver medalist.footnote:[{fn-rank}]
  
 If I didn't want a "gap" in the ranking numbers, then I should use the Dense_rank() 
-function which uses a Dense ranking strategy (`1223` ranking)  so no olympic medalling style of ranking with Dense_rank(). In dense ranking, items that compare equally receive the same ranking number, and the next items receive the immediately following ranking number.footnote:[{fn-dense_rank}]
+function which uses a {drank-wiki}[Dense ranking strategy] (`1223` ranking)  so no olympic medalling style of ranking with Dense_rank(). In dense ranking, items that compare equally receive the same ranking number, and the next items receive the immediately following ranking number.footnote:[{fn-dense_rank}]
 ====
-include::https://en.wikipedia.org/wiki/Ranking#Standard_competition_ranking_(%221224%22_ranking)[]
+
 
 
 
