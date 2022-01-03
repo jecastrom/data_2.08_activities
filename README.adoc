@@ -115,8 +115,12 @@ image::https://user-images.githubusercontent.com/63274055/147939661-88d36340-bd7
 [NOTE]
 ====
  Notice that the number of cities can repeat or tie. When this occurs 
- the two values receive the same ranking number, and then a gap is left in the ranking numbers. 
- The Rank() functions uses a Standard competition ranking strategy. for example ranks in a "Olympic medalling style", if two people  share the gold, there is no silver medalist.footnote:[fn-rank]
+ the two values receive the same ranking number, and then a gap is left 
+ in the ranking numbers. 
+ 
+ The Rank() functions uses a Standard competition ranking strategy. for example 
+ ranks in a "Olympic medalling style", if two people  share the gold, there is no 
+ silver medalist.footnote:[fn-rank]
  
  If I didn't want the "skipping" of levels, then I should use the Dense_rank() 
  function,  so no olympic medalling style of ranking with Dense_rank().
