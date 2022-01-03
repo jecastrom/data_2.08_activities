@@ -218,7 +218,7 @@ FROM
 ORDER BY
     unemployment_rate DESC;
 ```
-image::https://user-images.githubusercontent.com/63274055/147964235-1d581a9d-5523-45df-b62e-2a08b276c4f4.png[width=600]
+image::https://user-images.githubusercontent.com/63274055/147964235-1d581a9d-5523-45df-b62e-2a08b276c4f4.png[width=800]
 
 == Do the same but group by region
 
