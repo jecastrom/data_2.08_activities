@@ -259,7 +259,16 @@ GROUP BY
 ORDER BY
     no_of_inhabitants DESC;
 ```
-image::https://user-images.githubusercontent.com/63274055/147972175-2a6f834b-38f0-4da4-9751-c55559675344.png[width=800]
+image::https://user-images.githubusercontent.com/63274055/147972175-2a6f834b-38f0-4da4-9751-c55559675344.png[width=800] 
+
+
+== Activity 2
+
+** Use the transactions table in the `bank` database to find the Top 20 `account_ids` based on the `amount`.
+
+
+
+** Illustrate the difference between `rank()` and `dense_rank()`.
 
 ====
 ''''
