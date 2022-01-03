@@ -74,6 +74,14 @@ toc::[]
 ** A12: the unemployment rate
 
 == Rank districts by different variables.
+
+`*_Answer:_*`
+
+```sql
+
+```
+image::[width=600]
+
 == Do the same but group by region.
 
 `*_Answer:_*`
@@ -107,7 +115,7 @@ image::[width=600]
 ''''
 ====
 
-bla bla blafootnote:[{fn-xxx}]
+//bla bla blafootnote:[{fn-xxx}]
 
 xref:SQL-Activity-2-08[Top Section]
 
