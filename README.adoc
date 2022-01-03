@@ -126,7 +126,7 @@ silver medalist.footnote:[{fn-rank}]
 If I didn't want a "gap" in the ranking numbers, then I should use the Dense_rank() 
 function which uses a Dense ranking strategy (`1223` ranking)  so no olympic medalling style of ranking with Dense_rank(). In dense ranking, items that compare equally receive the same ranking number, and the next items receive the immediately following ranking number.footnote:[{fn-dense_rank}]
 ====
-
+include::https://en.wikipedia.org/wiki/Ranking#Standard_competition_ranking_(%221224%22_ranking)[]
 
 
 
