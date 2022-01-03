@@ -120,15 +120,15 @@ Notice that the number of cities can repeat or tie. When this occurs
 the two values receive the same ranking number, and then a gap is left 
 in the ranking numbers. 
 
-The Rank() functions uses a Standard competition ranking strategy ('1224' ranking). for example 
+The Rank() functions uses a link:{rank-wiki}[Standard competition ranking strategy] ('1224' ranking). for example 
 ranks in a "Olympic medalling style", if two people  share the gold, there is no 
 silver medalist.footnote:[{fn-rank}]
  
 If I didn't want a "gap" in the ranking numbers, then I should use the Dense_rank() 
-function which uses a link:https://en.wikipedia.org/wiki/Ranking#:~:text=as%20a%20gap.-,Dense%20ranking%20("1223"%20ranking),respect%20to%20the%20ranking%20order.[Dense ranking strategy] (`1223` ranking)  so no olympic medalling style of ranking with Dense_rank(). In dense ranking, items that compare equally receive the same ranking number, and the next items receive the immediately following ranking number.footnote:[{fn-dense_rank}]
+function which uses a link:{drank-wiki}[Dense ranking strategy] (`1223` ranking)  so no olympic medalling style of ranking with Dense_rank(). In dense ranking, items that compare equally receive the same ranking number, and the next items receive the immediately following ranking number.footnote:[{fn-dense_rank}]
 ====
 
-link:{rank-wiki}[gfgfgfgf]
+
 
 
 ```sql
