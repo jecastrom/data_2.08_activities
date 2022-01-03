@@ -6,7 +6,7 @@
 :description: SQL queries Activities
 //:script-url: ADD SCRIPT URL HERE 
 :toc:
-:toc-title: Activities | 
+:toc-title: Content:
 :toc-placement!:
 :toclevels: 5
 //:fn-xxx: Add the explanation foot note here bla bla
