@@ -147,3 +147,18 @@ FROM
     trans
 LIMIT
     20;
+--Activity 3
+-- 1. Get a rank of districts ordered by the number of customers
+SELECT
+    district_id,
+    district.a2 AS district_name,
+    count(*) AS total_number_of_customers,
+    rank() over(
+        ORDER BY
+            count(*) DESC
+    ) AS ranking
+FROM
+    client
+    INNER JOIN district ON `client`.district_id = district.a1
+GROUP BY
+    1;

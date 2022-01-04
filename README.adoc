@@ -307,10 +307,23 @@ xref:Rank-districts-by-different-variables[Answered in activity 1]
 `*_Answer:_*`
 
 ```sql
+SELECT
+    district_id,
+    district.a2 AS district_name,
+    count(*) AS total_number_of_customers,
+    rank() over(
+        ORDER BY
+            count(*) DESC
+    ) AS ranking
+FROM
+    client
+    INNER JOIN district ON `client`.district_id = district.a1
+GROUP BY
+    1;
 
 ```
 
-image::path[width=800]
+image::https://user-images.githubusercontent.com/63274055/148056923-21742939-d8af-4333-8e82-60003af94f54.png[width=800]
 
 == Get a rank of regions ordered by the number of customers
 
