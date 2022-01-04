@@ -189,3 +189,18 @@ GROUP BY
     1
 ORDER BY
     3 DESC;
+-- 3. Get the total amount borrowed by the district together with the average loan in that district
+SELECT
+    a1 AS district_id,
+    a2 AS district_name,
+    count(*) AS accounts_opened,
+    concat('19', left(`date`, 2)) AS year
+FROM
+    account
+    INNER JOIN district ON account.district_id = district.a1
+GROUP BY
+    1,
+    4
+ORDER BY
+    1,
+    4 DESC;

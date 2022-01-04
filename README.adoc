@@ -373,10 +373,23 @@ image::https://user-images.githubusercontent.com/63274055/148067880-34346710-5ea
 `*_Answer:_*`
 
 ```sql
-
+SELECT
+    a1 AS district_id,
+    a2 AS district_name,
+    count(*) AS accounts_opened,
+    concat('19', left(`date`, 2)) AS year
+FROM
+    account
+    INNER JOIN district ON account.district_id = district.a1
+GROUP BY
+    1,
+    4
+ORDER BY
+    1,
+    4 DESC;
 ```
 
-image::path[width=800]
+image::pahttps://user-images.githubusercontent.com/63274055/148075331-2b2d6f2a-4432-484c-ac64-5bf67f7bcb2f.pngth[width=800]
 
 
 
