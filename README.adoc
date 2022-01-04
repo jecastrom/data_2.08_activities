@@ -362,6 +362,10 @@ GROUP BY
 
 image::https://user-images.githubusercontent.com/63274055/148058920-f9450c86-3765-4ca6-837f-b2b1d6dfde25.png[width=800]
 
+xref:SQL-Activity-2-08[Top Section]
+
+xref:Get-the-number-of-accounts-opened-by-district-and-year[Bottom Section]
+
 == Get the total amount borrowed by the district together with the average loan in that district
 
 `*_Answer:_*`
@@ -409,7 +413,7 @@ ORDER BY
     4 DESC;
 ```
 
-image::pahttps://user-images.githubusercontent.com/63274055/148075331-2b2d6f2a-4432-484c-ac64-5bf67f7bcb2f.png[width=800]
+image::https://user-images.githubusercontent.com/63274055/148075331-2b2d6f2a-4432-484c-ac64-5bf67f7bcb2f.png[width=800]
 
 
 
