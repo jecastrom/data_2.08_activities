@@ -330,10 +330,21 @@ image::https://user-images.githubusercontent.com/63274055/148056923-21742939-d8a
 `*_Answer:_*`
 
 ```sql
-
+SELECT
+    district.a3 AS region_name,
+    count(*) AS total_number_of_customers,
+    rank() over(
+        ORDER BY
+            count(*) DESC
+    ) AS ranking
+FROM
+    client
+    INNER JOIN district ON `client`.district_id = district.a1
+GROUP BY
+    1;
 ```
 
-image::path[width=800]
+image::https://user-images.githubusercontent.com/63274055/148058920-f9450c86-3765-4ca6-837f-b2b1d6dfde25.png[width=800]
 
 == Get the total amount borrowed by the district together with the average loan in that district
 

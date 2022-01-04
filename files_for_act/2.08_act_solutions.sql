@@ -162,3 +162,17 @@ FROM
     INNER JOIN district ON `client`.district_id = district.a1
 GROUP BY
     1;
+-- 2. Get a rank of regions ordered by the number of customers
+SELECT
+    district.a3 AS region_name,
+    count(*) AS total_number_of_customers,
+    rank() over(
+        ORDER BY
+            count(*) DESC
+    ) AS ranking
+FROM
+    client
+    INNER JOIN district ON `client`.district_id = district.a1
+GROUP BY
+    1;
+-- 3) Get the total amount borrowed by the district together with the average loan in that district.
