@@ -315,7 +315,7 @@ xref:Rank-districts-by-different-variables[Answered in activity 1]
 
 xref:SQL-Activity-2-08[Top Section]
 
-xref:Do-the-same-but-group-by-region[Bottom section]
+//xref:Do-the-same-but-group-by-region[Bottom section]
 
 
 ////
