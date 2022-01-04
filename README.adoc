@@ -271,7 +271,7 @@ image::https://user-images.githubusercontent.com/63274055/147972175-2a6f834b-38f
 
 = Activity 2
 
-** Use the transactions table in the `bank` database to find the Top 20 `account_ids` based on the `amount`.
+== Use the transactions table in the `bank` database to find the Top 20 `account_ids` based on the `amount`.
 
 `*_Answer:_*`
 
@@ -294,7 +294,7 @@ image::https://user-images.githubusercontent.com/63274055/147998575-c87a88e2-65b
 
 
 
-** Illustrate the difference between `rank()` and `dense_rank()`.
+== Illustrate the difference between `rank()` and `dense_rank()`.
 
 xref:Rank-districts-by-different-variables[Answered in activity 1]
 
