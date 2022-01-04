@@ -323,7 +323,7 @@ GROUP BY
 
 ```
 
-image::https://user-images.githubusercontent.com/63274055/148056923-21742939-d8af-4333-8e82-60003af94f54.png[width=800]
+image::https://user-images.githubusercontent.com/63274055/148056923-21742939-d8af-4333-8e82-60003af94f54.png[width=400]
 
 == Get a rank of regions ordered by the number of customers
 
