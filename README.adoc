@@ -4,7 +4,7 @@
 :image-url-ironhack: https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png
 :my-name: Jorge Castro DAPT NOV2021
 :description: SQL queries Activities
-:script-url: https://github.com/jecastrom/data_2.08_activities/blob/3aa7848f4b7c4971c04ce19ed2a7311b239d1463/files_for_act/2.08_act_solutions.sql 
+:script-url: https://github.com/jecastrom/data_2.08_activities/blob/07de32d6af11671b1900cd9c8a42ed7a58c32765/files_for_act/2.08_act_solutions.sql
 :toc:
 :toc-title: Content:
 :toc-placement!:
@@ -227,6 +227,10 @@ ORDER BY
 ```
 image::https://user-images.githubusercontent.com/63274055/147964235-1d581a9d-5523-45df-b62e-2a08b276c4f4.png[width=800]
 
+xref:SQL-Activity-2-08[Top Section]
+
+xref:Get-the-number-of-accounts-opened-by-district-and-year[Bottom Section]
+
 == Do the same but group by region
 
 `*_Answer:_*`
@@ -268,6 +272,10 @@ ORDER BY
 ```
 image::https://user-images.githubusercontent.com/63274055/147972175-2a6f834b-38f0-4da4-9751-c55559675344.png[width=800] 
 
+xref:SQL-Activity-2-08[Top Section]
+
+xref:Get-the-number-of-accounts-opened-by-district-and-year[Bottom Section]
+
 
 = Activity 2
 
@@ -290,6 +298,10 @@ LIMIT
 ```
 
 image::https://user-images.githubusercontent.com/63274055/147998575-c87a88e2-65b7-48a7-8eab-08d4471d0dc1.png[width=800]
+
+xref:SQL-Activity-2-08[Top Section]
+
+xref:Get-the-number-of-accounts-opened-by-district-and-year[Bottom Section]
 
 
 
@@ -324,6 +336,10 @@ GROUP BY
 ```
 
 image::https://user-images.githubusercontent.com/63274055/148056923-21742939-d8af-4333-8e82-60003af94f54.png[width=500]
+
+xref:SQL-Activity-2-08[Top Section]
+
+xref:Get-the-number-of-accounts-opened-by-district-and-year[Bottom Section]
 
 == Get a rank of regions ordered by the number of customers
 
@@ -368,6 +384,10 @@ ORDER BY
 
 image::https://user-images.githubusercontent.com/63274055/148067880-34346710-5ea6-4530-a4fd-402a660d5f9e.png[width=800]
 
+xref:SQL-Activity-2-08[Top Section]
+
+xref:Get-the-number-of-accounts-opened-by-district-and-year[Bottom Section]
+
 == Get the number of accounts opened by district and year
 
 `*_Answer:_*`
@@ -389,7 +409,7 @@ ORDER BY
     4 DESC;
 ```
 
-image::pahttps://user-images.githubusercontent.com/63274055/148075331-2b2d6f2a-4432-484c-ac64-5bf67f7bcb2f.pngth[width=800]
+image::pahttps://user-images.githubusercontent.com/63274055/148075331-2b2d6f2a-4432-484c-ac64-5bf67f7bcb2f.png[width=800]
 
 
 
@@ -414,6 +434,10 @@ image::pahttps://user-images.githubusercontent.com/63274055/148075331-2b2d6f2a-4
 //bla bla blafootnote:[{fn-xxx}]
 
 xref:SQL-Activity-2-08[Top Section]
+
+xref:Get-the-number-of-accounts-opened-by-district-and-year[Bottom Section]
+
+
 
 //xref:Do-the-same-but-group-by-region[Bottom section]
 
