@@ -298,6 +298,57 @@ image::https://user-images.githubusercontent.com/63274055/147998575-c87a88e2-65b
 
 xref:Rank-districts-by-different-variables[Answered in activity 1]
 
+= Activity 3
+
+* Keep using the `bank` database.
+
+== Get a rank of districts ordered by the number of customers
+
+`*_Answer:_*`
+
+```sql
+
+```
+
+image::path[width=800]
+
+== Get a rank of regions ordered by the number of customers
+
+`*_Answer:_*`
+
+```sql
+
+```
+
+image::path[width=800]
+
+== Get the total amount borrowed by the district together with the average loan in that district
+
+`*_Answer:_*`
+
+```sql
+
+```
+
+image::path[width=800]
+
+== Get the number of accounts opened by district and year
+
+`*_Answer:_*`
+
+```sql
+
+```
+
+image::path[width=800]
+
+
+
+
+
+
+
+
 ====
 ''''
 ====
