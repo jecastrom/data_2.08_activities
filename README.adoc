@@ -76,7 +76,7 @@ toc::[]
 ** A11: average salary
 ** A12: the unemployment rate
 
-== Rank districts by different variables.
+== Rank districts by different variables
 
 `*_Answer:_*`
 
@@ -296,7 +296,7 @@ image::https://user-images.githubusercontent.com/63274055/147998575-c87a88e2-65b
 
 ** Illustrate the difference between `rank()` and `dense_rank()`.
 
-xref:Notice-number-cities <<Answered in activity 1>>
+xref:Rank-districts-by-different-variables[Answered in activity 1]
 
 ====
 ''''
