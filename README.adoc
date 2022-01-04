@@ -55,7 +55,7 @@ image::{image-url-ironhack}[width=70]
 
 {my-name}
 
-https://en.wikipedia.org/wiki/Ranking#Standard_competition_ranking_(%221224%22_ranking)
+
                                                      
 ====
 ''''
@@ -269,17 +269,40 @@ ORDER BY
 image::https://user-images.githubusercontent.com/63274055/147972175-2a6f834b-38f0-4da4-9751-c55559675344.png[width=800] 
 
 
-== Activity 2
+= Activity 2
 
 ** Use the transactions table in the `bank` database to find the Top 20 `account_ids` based on the `amount`.
+
+`*_Answer:_*`
+
+```sql
+SELECT
+    account_id,
+    amount,
+    rank() over(
+        ORDER BY
+            amount DESC
+    ) AS top_20_transactions
+FROM
+    trans
+LIMIT
+    20;
+```
+
+image::https://user-images.githubusercontent.com/63274055/147998575-c87a88e2-65b7-48a7-8eab-08d4471d0dc1.png[width=800]
+
 
 
 
 ** Illustrate the difference between `rank()` and `dense_rank()`.
 
+xref:Notice-number-cities[Answered in activity 1]
+
 ====
 ''''
 ====
+
+
 
 
 {script-url}[Solutions script only]

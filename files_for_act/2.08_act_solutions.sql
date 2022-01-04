@@ -134,3 +134,16 @@ GROUP BY
     1
 ORDER BY
     no_of_inhabitants DESC;
+-- ACTIVITY 2: 
+-- Use the transactions table in the `bank` database to find the Top 20 `account_ids` based on the `amount`.
+SELECT
+    account_id,
+    amount,
+    rank() over(
+        ORDER BY
+            amount DESC
+    ) AS top_20_transactions
+FROM
+    trans
+LIMIT
+    20;
