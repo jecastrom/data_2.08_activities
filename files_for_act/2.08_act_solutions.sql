@@ -176,3 +176,16 @@ FROM
 GROUP BY
     1;
 -- 3) Get the total amount borrowed by the district together with the average loan in that district.
+SELECT
+    district_id,
+    district.a2 AS district_name,
+    sum(loan.amount) AS total_amount_borrowed,
+    floor(avg(loan.amount)) AS average_loan
+FROM
+    loan
+    INNER JOIN account ON loan.account_id = account.account_id
+    INNER JOIN district ON account.district_id = district.a1
+GROUP BY
+    1
+ORDER BY
+    3 DESC;

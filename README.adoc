@@ -351,10 +351,22 @@ image::https://user-images.githubusercontent.com/63274055/148058920-f9450c86-376
 `*_Answer:_*`
 
 ```sql
-
+SELECT
+    district_id,
+    district.a2 AS district_name,
+    sum(loan.amount) AS total_amount_borrowed,
+    floor(avg(loan.amount)) AS average_loan
+FROM
+    loan
+    INNER JOIN account ON loan.account_id = account.account_id
+    INNER JOIN district ON account.district_id = district.a1
+GROUP BY
+    1
+ORDER BY
+    3 DESC;
 ```
 
-image::path[width=800]
+image::https://user-images.githubusercontent.com/63274055/148067880-34346710-5ea6-4530-a4fd-402a660d5f9e.png[width=800]
 
 == Get the number of accounts opened by district and year
 
