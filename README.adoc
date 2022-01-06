@@ -5,6 +5,7 @@
 :my-name: Jorge Castro DAPT NOV2021
 :description: SQL queries Activities
 :script-url: https://github.com/jecastrom/data_2.08_activities/blob/07de32d6af11671b1900cd9c8a42ed7a58c32765/files_for_act/2.08_act_solutions.sql
+:related-content: https://github.com/jecastrom/lab-sql-8.git
 :toc:
 :toc-title: Content:
 :toc-placement!:
@@ -418,8 +419,11 @@ image::https://user-images.githubusercontent.com/63274055/148075331-2b2d6f2a-443
 
 
 
+====
+''''
+====
 
-
+{related-content}[Related content: Lab 8]
 
 
 ====
